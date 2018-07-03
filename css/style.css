@@ -747,7 +747,6 @@ h1, h2, h3, h4, h5, h6, figure {
     line-height: 12px;
 }
 
-
 .services:hover, .services:focus {
     background: #31486f;
     color: rgba(255, 255, 255, 0.7);
@@ -1686,4 +1685,11 @@ h1, h2, h3, h4, h5, h6, figure {
 
 .js .animate-box {
     opacity: 0;
+}
+
+/* Not from template */
+.phone-email {
+    display: flex;
+    justify-content: center;
+    align-items: center
 }
