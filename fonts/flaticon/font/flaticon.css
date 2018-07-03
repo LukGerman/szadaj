@@ -1,6 +1,6 @@
 	/*
   	Flaticon icon font: Flaticon
-  	Creation date: 05/01/2018 02:43
+  	Creation date: 03/07/2018 23:25
   	*/
 
 @font-face {
@@ -29,16 +29,14 @@
     /*margin-left: 20px;*/
 }
 
-.flaticon-police-badge:before { content: "\f100"; }
-.flaticon-jury:before { content: "\f101"; }
-.flaticon-lawyer-1:before { content: "\f102"; }
-.flaticon-siren:before { content: "\f103"; }
-.flaticon-lawyer:before { content: "\f104"; }
-.flaticon-policeman:before { content: "\f105"; }
-.flaticon-handcuffs:before { content: "\f106"; }
-.flaticon-padlock:before { content: "\f107"; }
-.flaticon-courthouse:before { content: "\f108"; }
-.flaticon-folder:before { content: "\f109"; }
-.flaticon-libra:before { content: "\f10a"; }
-.flaticon-act:before { content: "\f10b"; }
-.flaticon-ball:before { content: "\f1e3"; }
+.flaticon-more-button-of-three-dots:before { content: "\f100"; }
+.flaticon-employee:before { content: "\f101"; }
+.flaticon-group:before { content: "\f102"; }
+.flaticon-music:before { content: "\f103"; }
+.flaticon-growth-1:before { content: "\f104"; }
+.flaticon-growth:before { content: "\f105"; }
+.flaticon-mother:before { content: "\f106"; }
+.flaticon-handcuffs:before { content: "\f107"; }
+.flaticon-guarantee:before { content: "\f108"; }
+.flaticon-profits:before { content: "\f109"; }
+.flaticon-football:before { content: "\f10a"; }
