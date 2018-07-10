@@ -56,6 +56,7 @@
 <div class="colorlib-loader"></div>
 
 <div id="page">
+    <!-- NAV BAR -->
     <nav class="colorlib-nav" role="navigation">
         <div class="top-menu">
             <div class="container">
@@ -65,22 +66,12 @@
                     </div>
                     <div class="col-md-10 text-right menu-1">
                         <ul>
-                            <li class="active"><a href="index.html">Home</a></li>
+                            <li class="active"><a href="index.html">Strona Główna</a></li>
                             <li><a href="#colorlib-practice" class="smooth-scroll">Praktyka</a></li>
-                            <li><a href="won.html">Won Cases</a></li>
-                            <li class="has-dropdown">
-                                <a href="blog.html">Blog</a>
-                                <ul class="dropdown">
-                                    <li><a href="#">menu 1</a></li>
-                                    <li><a href="#">menu 2</a></li>
-                                    <li><a href="#">menu 3</a></li>
-                                    <li><a href="#">menu 4</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                            <li class="btn-cta"><a href="#"><span>Umów się na spotkanie</span></a></li>
-                            <!-- <li class="btn-cta"><a href="#"><span>Sign Up</span></a></li> -->
+                            <li><a href="#colorlib-about" class="smooth-scroll">Doświadczenie</a></li>
+                            <li><a href="#colorlib-counter" class="smooth-scroll">Wynagrodzenie</a></li>
+                            <li class="btn-cta"><a href="#colorlib-contact"
+                                                   class="smooth-scroll"><span>Kontakt</span></a></li>
                         </ul>
                     </div>
                 </div>
@@ -89,6 +80,7 @@
         </div>
     </nav>
 
+    <!-- CAROUSEL -->
     <aside id="colorlib-hero" class="js-fullheight">
         <div class="flexslider js-fullheight">
             <ul class="slides">
@@ -99,7 +91,8 @@
                             <div class="col-md-8 col-md-offset-2 text-center js-fullheight slider-text">
                                 <div class="slider-text-inner">
                                     <h1>Osobiste i trwałe relacje</h1>
-                                    <p><a class="btn btn-primary btn-lg" href="#">Umów się na spotkanie</a></p>
+                                    <p><a class="btn btn-primary btn-lg smooth-scroll" href="#colorlib-contact">Zapraszamy
+                                        do kontaktu</a></p>
                                 </div>
                             </div>
                         </div>
@@ -112,8 +105,8 @@
                             <div class="col-md-8 col-md-offset-2 text-center js-fullheight slider-text">
                                 <div class="slider-text-inner">
                                     <h1>Współpraca i wygoda</h1>
-                                    <p><a class="btn btn-primary btn-lg btn-learn" href="#">Umów się na spotkanie</a>
-                                    </p>
+                                    <p><a class="btn btn-primary btn-lg btn-learn smooth-scroll"
+                                          href="#colorlib-contact">Zapraszamy do kontaktu</a></p>
                                 </div>
                             </div>
                         </div>
@@ -126,8 +119,8 @@
                             <div class="col-md-8 col-md-offset-2 text-center js-fullheight slider-text">
                                 <div class="slider-text-inner">
                                     <h1>Profesjonalizm</h1>
-                                    <p><a class="btn btn-primary btn-lg btn-learn" href="#">Umów się na spotkanie</a>
-                                    </p>
+                                    <p><a class="btn btn-primary btn-lg btn-learn smooth-scroll"
+                                          href="#colorlib-contact">Zapraszamy do kontaktu</a></p>
                                 </div>
                             </div>
                         </div>
@@ -162,7 +155,7 @@
         </div>
     </div>
 
-    <!--  PRACTICE  -->
+    <!-- PRACTICE -->
     <div id="colorlib-practice">
         <div class="container">
             <div class="row animate-box">
@@ -423,30 +416,27 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-12 text-center animate-box">
-                    <p><a class="btn btn-primary btn-lg btn-learn" href="#">View More <i
-                            class="icon-arrow-right"></i></a></p>
-                </div>
             </div>
         </div>
     </div>
 
+    <!-- BELT -->
     <div id="colorlib-started" style="background-image:url(images/img_bg_2.jpg);" data-stellar-background-ratio="0.5">
         <div class="overlay"></div>
         <div class="container">
             <div class="row animate-box">
-                <div class="col-md-8 col-md-offset-2 text-center colorlib-heading colorlib-heading2">
-                    <h2>30 Years of Experienced in Various cases</h2>
-                    <p>We help people effectively fight their offenders back and successfully defend their own
-                        stand!</p>
-                    <p><a href="#" class="btn btn-primary btn-lg">Consultation</a></p>
+                <div class="col-md-10 col-md-offset-1 text-center colorlib-heading colorlib-heading2">
+                    <p class="engage-text">Zachęcamy Państwa do skorzystania z możliwości bezpłatnego spotkania z radcą
+                        prawnym w celu omówienia zasad i warunków podjęcia dalszej współpracy</p>
+                    <p><a href="#colorlib-contact" class="btn btn-primary btn-lg smooth-scroll">Zapraszamy do
+                        konsultacji</a></p>
                 </div>
             </div>
         </div>
     </div>
 
-
-    <div id="colorlib-testimonial" class="colorlib-bg-section">
+    <!-- TESTIMONIALS -->
+    <div hidden id="colorlib-testimonial" class="colorlib-bg-section">
         <div class="container">
             <div class="row animate-box">
                 <div class="col-md-6 col-md-offset-3 text-center colorlib-heading">
@@ -502,167 +492,35 @@
         </div>
     </div>
 
-    <div id="colorlib-consult">
-        <div class="video colorlib-video" style="background-image: url(images/video.jpg);"
-             data-stellar-background-ratio="0.5">
-        </div>
-        <div class="choose choose-form animate-box">
-            <div class="colorlib-heading">
-                <h2>Free Legal Consultation</h2>
-            </div>
-            <form action="#">
-                <div class="row form-group">
-                    <div class="col-md-6">
-                        <!-- <label for="fname">First Name</label> -->
-                        <input type="text" id="fname" class="form-control" placeholder="Your firstname">
-                    </div>
-                    <div class="col-md-6">
-                        <!-- <label for="lname">Last Name</label> -->
-                        <input type="text" id="lname" class="form-control" placeholder="Your lastname">
-                    </div>
-                </div>
-
-                <div class="row form-group">
-                    <div class="col-md-12">
-                        <!-- <label for="email">Email</label> -->
-                        <input type="text" id="email" class="form-control" placeholder="Your email address">
-                    </div>
-                </div>
-
-                <div class="row form-group">
-                    <div class="col-md-12">
-                        <!-- <label for="subject">Subject</label> -->
-                        <input type="text" id="subject" class="form-control" placeholder="Your subject of this message">
-                    </div>
-                </div>
-
-                <div class="row form-group">
-                    <div class="col-md-12">
-                        <!-- <label for="message">Message</label> -->
-                        <textarea name="message" id="message" cols="30" rows="10" class="form-control"
-                                  placeholder="Say something about us"></textarea>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <input type="submit" value="Send Message" class="btn btn-primary">
-                </div>
-
-            </form>
-        </div>
-    </div>
-
-    <div id="colorlib-blog">
-        <div class="container">
-            <div class="row animate-box">
-                <div class="col-md-8 col-md-offset-2 text-center colorlib-heading">
-                    <h2>Recent Post</h2>
-                    <p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident.
-                        Odit ab aliquam dolor eius.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="blog-featured animate-box">
-                        <a href="blog.html"><img class="img-responsive" src="images/blog-1.jpg" alt=""></a>
-                        <h2><a href="blog.html">Child Abuse Cases Are Our First Priority</a></h2>
-                        <p class="meta"><span>Jan 5, 2017</span> | <span>3 Comments</span></p>
-                        <p>Even the all-powerful Pointing has no control about the blind texts it is an almost
-                            unorthographic life One day however</p>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="row">
-                        <div class="col-md-12 animate-box">
-                            <div class="blog-entry">
-                                <a href="blog.html" class="thumb"><img class="img-responsive" src="images/blog-2.jpg"
-                                                                       alt=""></a>
-                                <div class="desc">
-                                    <h3><a href="blog.html">Family Law Is Now On Court</a></h3>
-                                    <p class="meta"><span>Jan 5, 2017</span> | <span>3 Comments</span></p>
-                                    <p>Far far away, behind the word mountains, far from the countries Vokalia and
-                                        Consonantia</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-12 animate-box">
-                            <div class="blog-entry">
-                                <a href="blog.html" class="thumb"><img class="img-responsive" src="images/blog-3.jpg"
-                                                                       alt=""></a>
-                                <div class="desc">
-                                    <h3><a href="blog.html">Family Law Is Now On Court</a></h3>
-                                    <p class="meta"><span>Jan 5, 2017</span> | <span>3 Comments</span></p>
-                                    <p>Far far away, behind the word mountains, far from the countries Vokalia and
-                                        Consonantia</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-12 animate-box">
-                            <div class="blog-entry">
-                                <a href="blog.html" class="thumb"><img class="img-responsive" src="images/blog-1.jpg"
-                                                                       alt=""></a>
-                                <div class="desc">
-                                    <h3><a href="blog.html">Family Law Is Now On Court</a></h3>
-                                    <p class="meta"><span>Jan 5, 2017</span> | <span>3 Comments</span></p>
-                                    <p>Far far away, behind the word mountains, far from the countries Vokalia and
-                                        Consonantia</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
+    <!-- BIO -->
     <div id="colorlib-about">
         <div class="container">
             <div class="row animate-box">
                 <div class="col-md-8 col-md-offset-2 text-center colorlib-heading">
-                    <h2>Our Attorneys</h2>
-                    <p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident.
-                        Odit ab aliquam dolor eius.</p>
+                    <h2>Doświadczenie</h2>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4 col-sm-4 text-center animate-box" data-animate-effect="fadeIn">
+                <div class="col-md-6 col-md-offset-3 col-xs-offset-0  text-center animate-box"
+                     data-animate-effect="fadeIn">
                     <div class="colorlib-staff">
                         <img src="images/user-2.jpg" alt="Template">
-                        <h3>John Simon</h3>
-                        <strong class="role">Counsel</strong>
-                        <p>Quos quia provident consequuntur culpa facere ratione maxime commodi voluptates id repellat
-                            velit eaque aspernatur expedita. Possimus itaque adipisci.</p>
-                        <ul class="colorlib-social-icons">
-                            <li><a href="#"><i class="icon-facebook"></i></a></li>
-                            <li><a href="#"><i class="icon-twitter"></i></a></li>
-                            <li><a href="#"><i class="icon-dribbble"></i></a></li>
-                            <li><a href="#"><i class="icon-github"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-4 text-center animate-box" data-animate-effect="fadeIn">
-                    <div class="colorlib-staff">
-                        <img src="images/user-2.jpg" alt="Template">
-                        <h3>John Doe</h3>
-                        <strong class="role">Head of International Practice</strong>
-                        <p>Quos quia provident consequuntur culpa facere ratione maxime commodi voluptates id repellat
-                            velit eaque aspernatur expedita. Possimus itaque adipisci.</p>
-                        <ul class="colorlib-social-icons">
-                            <li><a href="#"><i class="icon-facebook"></i></a></li>
-                            <li><a href="#"><i class="icon-twitter"></i></a></li>
-                            <li><a href="#"><i class="icon-dribbble"></i></a></li>
-                            <li><a href="#"><i class="icon-github"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-4 text-center animate-box" data-animate-effect="fadeIn">
-                    <div class="colorlib-staff">
-                        <img src="images/user-2.jpg" alt="Template">
-                        <h3>Peter Washington</h3>
-                        <strong class="role">Managing Partner, Attorney</strong>
-                        <p>Quos quia provident consequuntur culpa facere ratione maxime commodi voluptates id repellat
-                            velit eaque aspernatur expedita. Possimus itaque adipisci.</p>
+                        <h3>Dawid Szadaj</h3>
+                        <strong class="role">Radca Prawny</strong>
+                        <p class="text-justify">Założycielem Kancelarii jest radca prawny Dawid Szadaj, członek
+                            Okręgowej Izby Radców Prawnych w
+                            Gdańsku od 2014r. Absolwent Wydziału Prawa i Administracji Uniwersytetu Gdańskiego,
+                            studiował także prawo w Niemczech na uniwersytecie Universität zu Köln. Praktyka zawodowa i
+                            zdobyte doświadczenie zawodowe gwarantują Klientom najwyższe standardy usług oraz
+                            indywidualne podejście w doradztwie prawnym.</p>
+                        <p class="text-justify">Doświadczenie zawodowe zdobywał zarówno w trójmiejskich jak i
+                            niemieckich kancelariach
+                            prawnych oraz w ekstraklasowym klubie piłkarskim. Prelegent wielu konferencji naukowych
+                            organizowanych między innymi przez Uczelnie Wyższe na terenie trójmiasta czy Uniwersytet
+                            Warmińsko- Mazurski, a także autor licznych publikacji.</p>
+                        <p class="text-justify">Doradztwo prawne świadczy przede wszystkich na rzecz podmiotów
+                            gospodarczych, osób
+                            fizycznych, środowiska sportowego zarówno z Polski jak i z Niemiec.</p>
                         <ul class="colorlib-social-icons">
                             <li><a href="#"><i class="icon-facebook"></i></a></li>
                             <li><a href="#"><i class="icon-twitter"></i></a></li>
@@ -674,6 +532,109 @@
             </div>
         </div>
     </div>
+
+    <!-- SALARY -->
+    <div id="colorlib-counter" class="colorlib-counters" style="background-image: url(images/img_bg_3.jpg);"
+         data-stellar-background-ratio="0.5">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row animate-box">
+                <div class="col-md-8 col-md-offset-2 text-center colorlib-heading">
+                    <h2 id="salary-heading">Wynagrodzenie</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 text-center animate-box">
+                    <span class="icon"><i class="flaticon-lawyer"></i></span>
+                    <p class="salary-text">Wynagrodzenie za usługi świadczone naszym klientom jest każdorazowo ustalane
+                        indywidualnie w
+                        zależności od charakteru zlecenia, rodzaju i stopnia zawiłości sprawy oraz niezbędnego nakładu
+                        pracy.</p>
+                </div>
+                <div class="col-md-4 text-center animate-box">
+                    <span class="icon"><i class="flaticon-libra"></i></span>
+                    <p class="salary-text">W zależności od charakteru współpracy oraz życzenia klienta, wynagrodzenie
+                        może być ustalane w
+                        oparciu o system godzinowy, jako honorarium za wykonanie konkretnego zlecenia lub system
+                        ryczałtowy, stosowany przy zleceniach stałej obsługi prawnej, określony stawką miesięczną.</p>
+                </div>
+                <div class="col-md-4 text-center animate-box">
+                    <span class="icon"><i class="flaticon-gavel"></i></span>
+                    <p class="salary-text">Możliwość ustalenia części wynagrodzenia jako premii za sukces, tzw. success
+                        fee.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTACT FORM -->
+    <div id="colorlib-contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 col-md-push-1 animate-box">
+
+                    <div class="colorlib-contact-info">
+                        <h3>Contact Information</h3>
+                        <ul>
+                            <li class="address">198 West 21th Street, <br> Suite 721 New York NY 10016</li>
+                            <li class="phone"><a href="tel://1234567920">+ 1235 2355 98</a></li>
+                            <li class="email"><a href="mailto:info@yoursite.com">info@yoursite.com</a></li>
+                            <li class="url"><a href="#">lawfirm.com</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="col-md-6 animate-box">
+                    <h3>Send A Message</h3>
+                    <form action="#">
+                        <div class="row form-group">
+                            <div class="col-md-6">
+                                <!-- <label for="fname">First Name</label> -->
+                                <input type="text" id="fname" class="form-control" placeholder="Your firstname">
+                            </div>
+                            <div class="col-md-6">
+                                <!-- <label for="lname">Last Name</label> -->
+                                <input type="text" id="lname" class="form-control" placeholder="Your lastname">
+                            </div>
+                        </div>
+
+                        <div class="row form-group">
+                            <div class="col-md-12">
+                                <!-- <label for="email">Email</label> -->
+                                <input type="text" id="email" class="form-control" placeholder="Your email address">
+                            </div>
+                        </div>
+
+                        <div class="row form-group">
+                            <div class="col-md-12">
+                                <!-- <label for="subject">Subject</label> -->
+                                <input type="text" id="subject" class="form-control"
+                                       placeholder="Your subject of this message">
+                            </div>
+                        </div>
+
+                        <div class="row form-group">
+                            <div class="col-md-12">
+                                <!-- <label for="message">Message</label> -->
+                                <textarea name="message" id="message" cols="30" rows="10" class="form-control"
+                                          placeholder="Say something about us"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Send Message" class="btn btn-primary">
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- MAP -->
+    <iframe id="map" class="colorlib-map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2320.7960509180953!2d18.567547851610524!3d54.431234100498266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46fd0ac06d4e7db3%3A0xf02b59bf1966e6c3!2sSportowa+1%2C+80-001+Sopot!5e0!3m2!1sen!2spl!4v1531244632963"
+            width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
 
     <footer id="colorlib-footer" role="contentinfo">
         <div class="container">

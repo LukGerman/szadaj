@@ -1,6 +1,6 @@
     /*
     Flaticon icon font: Flaticon
-    Creation date: 03/07/2018 23:25
+    Creation date: 10/07/2018 20:41
     */
 
     @font-face {
@@ -36,26 +36,32 @@
   font-smoothing: antialiased;
     }
 
-    .flaticon-more-button-of-three-dots:before { content: "\f100"; }
-.flaticon-employee:before { content: "\f101"; }
-.flaticon-group:before { content: "\f102"; }
-.flaticon-music:before { content: "\f103"; }
-.flaticon-growth-1:before { content: "\f104"; }
-.flaticon-growth:before { content: "\f105"; }
-.flaticon-mother:before { content: "\f106"; }
-.flaticon-handcuffs:before { content: "\f107"; }
-.flaticon-guarantee:before { content: "\f108"; }
-.flaticon-profits:before { content: "\f109"; }
+    .flaticon-gavel:before { content: "\f100"; }
+.flaticon-libra:before { content: "\f101"; }
+.flaticon-lawyer:before { content: "\f102"; }
+.flaticon-growth-1:before { content: "\f103"; }
+.flaticon-growth:before { content: "\f104"; }
+.flaticon-guarantee:before { content: "\f105"; }
+.flaticon-profits:before { content: "\f106"; }
+.flaticon-group:before { content: "\f107"; }
+.flaticon-employee:before { content: "\f108"; }
+.flaticon-mother:before { content: "\f109"; }
 .flaticon-football:before { content: "\f10a"; }
+.flaticon-handcuffs:before { content: "\f10b"; }
+.flaticon-music:before { content: "\f10c"; }
+.flaticon-more-button-of-three-dots:before { content: "\f10d"; }
     
-    $font-Flaticon-more-button-of-three-dots: "\f100";
-    $font-Flaticon-employee: "\f101";
-    $font-Flaticon-group: "\f102";
-    $font-Flaticon-music: "\f103";
-    $font-Flaticon-growth-1: "\f104";
-    $font-Flaticon-growth: "\f105";
-    $font-Flaticon-mother: "\f106";
-    $font-Flaticon-handcuffs: "\f107";
-    $font-Flaticon-guarantee: "\f108";
-    $font-Flaticon-profits: "\f109";
+    $font-Flaticon-gavel: "\f100";
+    $font-Flaticon-libra: "\f101";
+    $font-Flaticon-lawyer: "\f102";
+    $font-Flaticon-growth-1: "\f103";
+    $font-Flaticon-growth: "\f104";
+    $font-Flaticon-guarantee: "\f105";
+    $font-Flaticon-profits: "\f106";
+    $font-Flaticon-group: "\f107";
+    $font-Flaticon-employee: "\f108";
+    $font-Flaticon-mother: "\f109";
     $font-Flaticon-football: "\f10a";
+    $font-Flaticon-handcuffs: "\f10b";
+    $font-Flaticon-music: "\f10c";
+    $font-Flaticon-more-button-of-three-dots: "\f10d";
