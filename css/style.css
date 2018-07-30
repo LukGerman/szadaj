@@ -1689,11 +1689,6 @@ h1, h2, h3, h4, h5, h6, figure {
     font-size: 24px;
     line-height: 12px;
 }
-.phone-email {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 #salary-heading {
     color: #ffffff;
 }
