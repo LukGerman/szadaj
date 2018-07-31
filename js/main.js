@@ -286,26 +286,31 @@
         });
     };
 
-    var email = document.getElementById('email');
-    var message = document.getElementById('message');
+    var emailInput = document.getElementById('email');
+    var messageInput = document.getElementById('message');
     var form = document.getElementById('contact-form');
 
     var contactSender = function () {
 
         $('#submit').on('click', function (event) {
             event.preventDefault();
-            if (!email.checkValidity()) {
-                email.classList.add('error');
-            } else if (!message.checkValidity()) {
-                message.classList.add('error');
+            if (!emailInput.checkValidity()) {
+                emailInput.classList.add('error');
+            } else if (!messageInput.checkValidity()) {
+                messageInput.classList.add('error');
             } else {
                 $.ajax({
                     url: 'https://x0yhvbi217.execute-api.eu-central-1.amazonaws.com/prod/contact',
                     type: 'POST',
                     contentType: 'application/json',
-                    data: $(this).serialize(),
+                    data: JSON.stringify({
+                        'email': $("#email").val(),
+                        'firstname': $("#firstname").val(),
+                        'lastname': $("#lastname").val(),
+                        'subject': $("#subject").val(),
+                        'message': $("#message").val()
+                    }),
                     success: function () {
-                        var form = document.getElementById('contact-form');
                         form.reset();
                         alert('Wiadomość została wysłana.');
                     },
@@ -318,8 +323,8 @@
     };
 
     form.addEventListener('input', function (event) {
-        email.classList.remove('error');
-        message.classList.remove('error');
+        emailInput.classList.remove('error');
+        messageInput.classList.remove('error');
     }, false);
 
 
