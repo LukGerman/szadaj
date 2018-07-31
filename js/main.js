@@ -286,21 +286,27 @@
         });
     };
 
+    var email = document.getElementById('email');
+    var message = document.getElementById('message');
+    var form = document.getElementById('contact-form');
+
     var contactSender = function () {
 
         $('#submit').on('click', function (event) {
             event.preventDefault();
-            var email = document.getElementById('email');
             if (!email.checkValidity()) {
                 email.classList.add('error');
+            } else if (!message.checkValidity()) {
+                message.classList.add('error');
             } else {
-
                 $.ajax({
                     url: 'https://x0yhvbi217.execute-api.eu-central-1.amazonaws.com/prod/contact',
                     type: 'POST',
                     contentType: 'application/json',
                     data: $(this).serialize(),
                     success: function () {
+                        var form = document.getElementById('contact-form');
+                        form.reset();
                         alert('Wiadomość została wysłana.');
                     },
                     error: function () {
@@ -310,6 +316,11 @@
             }
         });
     };
+
+    form.addEventListener('input', function (event) {
+        email.classList.remove('error');
+        message.classList.remove('error');
+    }, false);
 
 
     $(function () {
