@@ -1681,25 +1681,36 @@ h1, h2, h3, h4, h5, h6, figure {
     margin-bottom: 0px;
     height: 40px;
 }
+
 .services .more:hover {
     cursor: pointer;
 }
+
 .services .more i {
     height: 40px;
     font-size: 24px;
     line-height: 12px;
 }
+
 #salary-heading {
     color: #ffffff;
 }
+
 .salary-text {
     color: #D3D3D3;
 }
+
 #colorlib-started .colorlib-heading .engage-text {
     font-size: 30px;
     color: #D3D3D3;
     margin-top: 50px;
 }
+
 .services .desc {
     font-size: 16px;
 }
+
+.error {
+    background-color: #FFC1BD;
+}
+

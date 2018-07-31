@@ -3,6 +3,7 @@
     'use strict';
 
     var isMobile = {
+
         Android: function () {
             return navigator.userAgent.match(/Android/i);
         },
@@ -35,8 +36,6 @@
                     $('.js-colorlib-nav-toggle').removeClass('active');
 
                 }
-
-
             }
         });
 
@@ -78,10 +77,8 @@
         $(window).resize(function () {
 
             if ($('body').hasClass('offcanvas')) {
-
                 $('body').removeClass('offcanvas');
                 $('.js-colorlib-nav-toggle').removeClass('active');
-
             }
         });
     };
@@ -91,7 +88,6 @@
 
         $('body').on('click', '.js-colorlib-nav-toggle', function (event) {
             var $this = $(this);
-
 
             if ($('body').hasClass('overflow offcanvas')) {
                 $('body').removeClass('overflow offcanvas');
@@ -112,11 +108,11 @@
                 $('.js-fullheight').css('height', $(window).height());
             });
         }
-
     };
 
 
     var contentWayPoint = function () {
+
         var i = 0;
         $('.animate-box').waypoint(function (direction) {
 
@@ -148,7 +144,6 @@
                 }, 100);
 
             }
-
         }, {offset: '85%'});
     };
 
@@ -171,7 +166,6 @@
                 .css('display', 'none')
                 .removeClass('animated-fast fadeInUpMenu');
         });
-
     };
 
 
@@ -198,7 +192,6 @@
             }
 
         });
-
     };
 
 
@@ -208,14 +201,16 @@
     };
 
     var counter = function () {
+
         $('.js-counter').countTo({
             formatter: function (value, options) {
                 return value.toFixed(options.decimals);
-            },
+            }
         });
     };
 
     var counterWayPoint = function () {
+
         if ($('#colorlib-counter').length > 0) {
             $('#colorlib-counter').waypoint(function (direction) {
 
@@ -278,10 +273,10 @@
         $(window).resize(function () {
             $('#colorlib-hero .flexslider .slides > li').css('height', $(window).height());
         });
-
     };
 
     var smoothScroll = function () {
+
         $('a.smooth-scroll').on('click', function (event) {
             var $anchor = $(this);
             $('html, body').stop().animate({
@@ -289,7 +284,31 @@
             }, 2000, 'easeInOutExpo');
             event.preventDefault();
         });
+    };
 
+    var contactSender = function () {
+
+        $('#submit').on('click', function (event) {
+            event.preventDefault();
+            var email = document.getElementById('email');
+            if (!email.checkValidity()) {
+                email.classList.add('error');
+            } else {
+
+                $.ajax({
+                    url: 'https://x0yhvbi217.execute-api.eu-central-1.amazonaws.com/prod/contact',
+                    type: 'POST',
+                    contentType: 'application/json',
+                    data: $(this).serialize(),
+                    success: function () {
+                        alert('Wiadomość została wysłana.');
+                    },
+                    error: function () {
+                        alert('Nie udało się wysłać wiadomości. Proszę skorzystać z innej formy kontaktu.');
+                    }
+                });
+            }
+        });
     };
 
 
@@ -308,6 +327,7 @@
         parallax();
         testimonialCarousel();
         fullHeight();
+        contactSender();
     });
 
 
