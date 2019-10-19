@@ -327,6 +327,23 @@
         messageInput.classList.remove('error');
     }, false);
 
+    // Modal
+    var modal = document.getElementById("disclaimerModal");
+    var modalOpenBtnForm = document.getElementById("modalOpenBtnForm");
+    var modalOpenBtnFooter = document.getElementById("modalOpenBtnFooter");
+    // When the user clicks on the button, open the modal
+    modalOpenBtnForm.onclick = function() {
+      modal.style.display = "block";
+    };
+    modalOpenBtnFooter.onclick = function() {
+      modal.style.display = "block";
+    };
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target === modal) {
+        modal.style.display = "none";
+      }
+    };
 
     $(function () {
         mobileMenuOutsideClick();
